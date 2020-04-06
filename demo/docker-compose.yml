@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  integralces-demo:
+    build: .
+    ports: 
+      - 2029:80
+    volumes:
+      - type: bind
+        source: .
+        target: /var/www/html/sites/all/modules/ices
