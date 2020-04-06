@@ -1,4 +1,4 @@
-#!\bin\sh
+#!/bin/sh
 
 # Stop current container.
 docker-compose stop
