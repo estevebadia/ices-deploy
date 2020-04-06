@@ -8,4 +8,4 @@ COPY settings.php.inc sites/default/settings.php.inc
 RUN printf "\ninclude dirname(__FILE__) . '/settings.php.inc';\n\n" >> sites/default/settings.php
 
 COPY demo-front.tpl.inc sites/all/themes/greences/templates
-RUN sed -i "/social currencies management for communities./a <?php include dirname(__FILE__) . '/demo-front.tpl.inc';" sites/all/themes/greences/templates/page.tpl.php
+RUN sed -i "/social currencies management for communities./a <?php include dirname(__FILE__) . '/demo-front.tpl.inc'; ?>" sites/all/themes/greences/templates/page.tpl.php
