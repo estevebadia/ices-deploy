@@ -2,6 +2,7 @@ version: "3.3"
 services:
   integralces-demo:
     build: .
+    restart: unless-stopped
     ports: 
       - 2029:2029
     volumes:
