@@ -1,0 +1,26 @@
+version: "3.3"
+services:
+  mail:
+    image: analogic/poste.io:2
+    ports:
+      - "7025:25"
+      - "7080:80"
+      - "7443:443"
+      - "7110:110"
+      - "7143:143"
+      - "7465:465"
+      - "7587:587"
+      - "7993:993"
+      - "7995:995"
+    volumes:
+      # Define named volume for email data folder.
+      - type: volume
+        source: mail-data
+        target: /data
+    environment:
+      TZ: "Europe/Madrid"
+      HTTPS: "OFF"
+      DISABLE_CLAMAV: "TRUE"
+      DISABLE_RSPAMD: "TRUE"
+volumes:
+  mail-data:
