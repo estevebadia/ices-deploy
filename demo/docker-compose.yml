@@ -12,3 +12,4 @@ services:
     environment:
       - NOTIFICATIONS_CLIENT_ID=notifications.test.komunitin.org
       - NOTIFICATIONS_CLIENT_SECRET=${NOTIFICATIONS_CLIENT_SECRET}
+      - NOTIFICATIONS_API_URL=http://notifications.test.komunitin.org
