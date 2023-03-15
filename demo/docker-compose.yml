@@ -9,3 +9,6 @@ services:
       - type: bind
         source: /opt/ices
         target: /var/www/html/sites/all/modules/ices
+    environment:
+      - NOTIFICATIONS_CLIENT_ID=notifications.test.komunitin.org
+      - NOTIFICATIONS_CLIENT_SECRET=${NOTIFICATIONS_CLIENT_SECRET}
