@@ -13,3 +13,4 @@ services:
       - NOTIFICATIONS_CLIENT_ID=notifications.test.komunitin.org
       - NOTIFICATIONS_CLIENT_SECRET=${NOTIFICATIONS_CLIENT_SECRET}
       - NOTIFICATIONS_API_URL=https://notifications.test.komunitin.org
+      - CES_USER_GOOGLE_MAPS_KEY=${CES_USER_GOOGLE_MAPS_KEY}
